@@ -1,0 +1,32 @@
+main{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#_container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 31%;
+  background: url(./images/dog.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#_heading {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: black;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 17px;
+}
+
+#_main{
+    width: 20px;
+    height: 100px;
+
+}
