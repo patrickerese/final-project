@@ -1,7 +1,7 @@
 main {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 #_container {
@@ -40,13 +40,16 @@ option {
   color: black;
 }
 
-#_fname {
-}
-
 .formgroup {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  width: 100%;
+}
+
+.formgroup.textfield {
+  display: block; 
+  width: 100%;
 }
 
 .formgroup.textfield > label {
@@ -54,6 +57,23 @@ option {
   margin-bottom: 10px;
 }
 .formgroup.textfield > input {
+  display: block;
   padding: 10px;
+  width: 100%;
+}
+
+.formgroup.selectfield > label {
+  display: block;
+  margin-bottom: 10px;
+}
+.formgroup.selectfield > select {
+  padding: 10px;
+  width: 100%;
+}
+
+          
+
+.form-flex{
+  display: flex;
 }
 
