@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
@@ -23,7 +23,76 @@
         <h1>Adopt a Doggo!</h1>
         <h4>Application form</h4>
         <form id="_main">
-          <input type="text" />
+          <div class="formgroup textfield">
+            <label for="_fname">Full Name</label>
+
+            <input
+              type="text"
+              id="_fname"
+              name="fname"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="formgroup textfield">
+            <label for="_email">Email</label>
+
+            <input
+              type="_email"
+              id="email"
+              name="email"
+              placeholder="email@email.com"
+            />
+          </div>
+          <div>
+            <div class="formgroup textfield">
+              <label for="_age" id="age">Age</label>
+
+              <input
+                type="text"
+                id="_age"
+                name="age"
+                placeholder="Enter your age"
+              />
+            </div>
+
+            <div>
+              <label for="_country" id="country">Country</label>
+              <select name="country" id="country" required>
+                <option id="disable" value="" disabled selected hidden>
+                  Select Country
+                </option>
+                <option value="Philippines">Philippines</option>
+                <option value="Australia">Australia</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div>
+              <label for="_dogbreed" id="dogtype">Dog Breed</label>
+              <input type="radio" />Bulldog <input type="radio" />Corgi
+              <input type="radio" />Pug <input type="radio" />Retriever
+              <input type="radio" />Shih Tzu
+            </div>
+            <div>
+              <label for="_dogtype" id="dogtype">Dog Type</label>
+              <input type="checkbox" />Puppy <input type="checkbox" />Young
+              <input type="checkbox" />Adult <input type="checkbox" />Senior
+            </div>
+          </div>
+
+          <div class="formgroup textfield">
+            <label for="_notes" id="notes">Notes</label>
+            <input
+              type="text"
+              id="notes"
+              name="notes"
+              placeholder="Enter your
+            notes here"
+            />
+          </div>
+          <div>
+            <button>Submit</button>
+          </div>
         </form>
       </div>
     </main>
